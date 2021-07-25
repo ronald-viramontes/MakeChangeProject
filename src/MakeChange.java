@@ -5,22 +5,14 @@ public class MakeChange {
 	public static void main(String[] args) {
 		Scanner kb = new Scanner(System.in);
 		
-										//STORE FRONT//
+														//STORE FRONT//
 		System.out.println(" -----------------------   Welcome to RV Liquidators   ------------------------");
 		System.out.println("                             • Se habla español •                               ");
 		System.out.println("\n                 Please enter the purchase price of the item        ");
 			double priceItem = kb.nextDouble();
 		System.out.println("        Please enter the amount of money you will be paying with         ");
 			double moneyTendered = kb.nextDouble();
-					
-									//CURRENCY STRINGS VARIABLES//
-//				String twentyDollarBill = twentyDollarCount + " twenty dollar bill(s) "; 
-//				String tenDollarBill = tenDollarCount + " ten dollar bill(s) ";	
-//				String fiveDollarBill = fiveDollarCount + " five dollar bill(s) ";
-//				String oneDollarBill = oneDollarCount + " one dollar bill(s) ";	String quarterCoin = quarterCount + " quarter(s) ";
-//				String dimeCoin = dimeCount + " dime(s) "; String nickelCoin = nickelCount + " nickel(s) ";	String pennyCoin = pennyCount + " pennies ";
-					
-								//ITEM COST & AMOUNT TENDERED FORMULA//
+							//ITEM COST & AMOUNT TENDERED FORMULA//
 						double changeReturned = (moneyTendered - priceItem);
 
 			//-----------------------Bill & Coin Count Variables--------------------//
@@ -44,7 +36,7 @@ public class MakeChange {
 						coinChangeReturned %= 5;
 						int pennyCount = coinChangeReturned/1;
 						coinChangeReturned %= 1;
-						
+											//STRING CONCATENATION// 
 						String twentyDollarBill = twentyDollarCount + " twenty dollar bill(s) "; 
 						String tenDollarBill = tenDollarCount + " ten dollar bill(s) ";	
 						String fiveDollarBill = fiveDollarCount + " five dollar bill(s) ";
